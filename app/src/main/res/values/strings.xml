@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Oil Temperature</string>
+    <string name="celsius">°C</string>
+    <string name="ic_oil_temperature">Oil temperature icon</string>
+    <string name="n_a">N/A</string>
+</resources>
