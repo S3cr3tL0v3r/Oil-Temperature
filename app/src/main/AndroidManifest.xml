@@ -20,20 +20,24 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar">
-        <service
-                android:name=".FloatingWidgetService"
-                android:exported="false">
-        </service>
-
+            android:theme="@style/Theme.OilTemperature">
         <activity
                 android:name=".MainActivity"
-                android:exported="true">
+                android:excludeFromRecents="true"
+                android:exported="true"
+                android:launchMode="singleInstance"
+                android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <service
+                android:name=".FloatWidgetService"
+                android:description="@string/service_description"
+                android:enabled="true"
+                android:exported="false">
+        </service>
     </application>
 
 </manifest>
